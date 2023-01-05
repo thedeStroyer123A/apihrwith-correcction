@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="2e602f5b-f7ae-4b12-b861-a24e2502a1b5" ChangeDateTime="12/30/2022 09:32:30">
+    <Property Name="ElementName" Value="[dbo].[Affectation-Materials].[Date_affectation]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Affectation-Materials]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Date_affectation_Material" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="3d9834cd-7c27-465f-9127-b74a206a653c" ChangeDateTime="12/30/2022 13:12:14">
+    <Property Name="ElementName" Value="[dbo].[Affectation-Materials].[Id_MA]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Affectation-Materials]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Id_Affectation_Material" />
+  </Operation>
+</Operations>

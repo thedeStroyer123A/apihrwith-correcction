@@ -24,7 +24,7 @@ namespace ProjectRh_BLL.Services
 
         public Affectation_Personnel_BLL Get(int id)
         {
-            return _repository.Get(id).AP_BLLtoAP_Repo();
+            return _repository.Get(id)?.AP_BLLtoAP_Repo();
         }
 
         public IEnumerable<Affectation_Personnel_BLL> GetAll()

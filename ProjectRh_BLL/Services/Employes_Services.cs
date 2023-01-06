@@ -24,7 +24,7 @@ namespace ProjectRh_BLL.Services
 
         public Employes_BLL Get(int id)
         {
-            return _repository.Get(id).E_BLLtoE_Repo();
+            return _repository.Get(id)?.E_BLLtoE_Repo();
         }
 
         public IEnumerable<Employes_BLL> GetAll()

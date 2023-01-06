@@ -5,8 +5,8 @@
 	 Id_Material INT ,
 	 Id_HR  INT  ,
 	 PRIMARY KEY([Id_Affectation_Material]),
-	 FOREIGN KEY(Id_Material) REFERENCES Materials(Id_Material),
-	 FOREIGN KEY (Id_HR) REFERENCES HumanRessourceDep(Id_HR)
+	 FOREIGN KEY(Id_Material) REFERENCES Materials(Id_Material) ,
+	 FOREIGN KEY (Id_HR)  REFERENCES HumanRessourceDep(Id_HR)
 
 
 )

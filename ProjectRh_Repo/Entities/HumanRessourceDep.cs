@@ -15,7 +15,7 @@ namespace ProjectRh_Repo.Entities
         public int RH_manager_Id { get; set; }   
         public int Location_Id { get; set; }
         public string email { get; set; }
-        public bool IsAdmin {get; set; }
+        
 
 
 

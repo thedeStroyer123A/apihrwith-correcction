@@ -25,7 +25,7 @@ namespace ProjectRh_BLL.Services
 
         public Material_BLL Get(int id)
         {
-            return _repository.Get(id).M_BLLtoM_Repo();
+            return _repository.Get(id)?.M_BLLtoM_Repo();
         }
 
         public IEnumerable<Material_BLL> GetAll()

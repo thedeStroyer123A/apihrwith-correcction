@@ -19,7 +19,7 @@ namespace ProjectRh_BLL.Mapper
                 RH_manager_Id = H_repo.RH_manager_Id,
                 Location_Id = H_repo.Location_Id,
                 email = H_repo.email,
-                IsAdmin = H_repo.IsAdmin
+                
             };
         }
 
@@ -32,7 +32,7 @@ namespace ProjectRh_BLL.Mapper
                 RH_manager_Id = Hr.RH_manager_Id,
                 Location_Id = Hr.Location_Id,
                 email =Hr.email,
-                IsAdmin = Hr.IsAdmin
+                
             };
         }
 

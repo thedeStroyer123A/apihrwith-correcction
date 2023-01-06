@@ -19,7 +19,7 @@ namespace ProjectRh_BLL.Services
         }
         public ControlCheck_BLL Get(int id)
         {
-            return _repository.Get(id).CC_BLLtoCC_Repo();
+            return _repository.Get(id)?.CC_BLLtoCC_Repo();
         }
 
         public IEnumerable<ControlCheck_BLL> GetAll()

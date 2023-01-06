@@ -10,7 +10,7 @@
 	
 	PRIMARY KEY(Id),
 	FOREIGN KEY([Id_HR]) REFERENCES HumanRessourceDep(Id_HR),
-	FOREIGN KEY(Id_Trained_Employee) REFERENCES Training_Section(Id_Trained_Employee)
+	FOREIGN KEY(Id_Trained_Employee)  REFERENCES Training_Section(Id_Trained_Employee)
 
 
 

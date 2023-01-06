@@ -13,7 +13,7 @@ namespace ProjectRh_Repo.Repositories.Basic_Repository
     public abstract class BasicRepo<TKey, TEntity> : IRepository<TKey, TEntity>
         where TEntity : IEntity<TKey>
     {
-        private string connexion = @"Data Source=(localdb)\MSSQLLocalDB;Integrated Security=True;Persist Security Info=False;Pooling=False;MultipleActiveResultSets=False;Connect Timeout=60;Encrypt=False;TrustServerCertificate=False";
+        private string connexion = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=DB_RH;Integrated Security=True";
         protected Connection ConnectionString { get; }
         protected string EntityName { get; }
         protected string IdName { get; }
@@ -29,7 +29,7 @@ namespace ProjectRh_Repo.Repositories.Basic_Repository
 
        
 
-        public TEntity Get(TKey id)
+        public TEntity? Get(TKey id)
         {
             Command cmd = new Command("SELECT * FROM [" + EntityName + "] " +
                            "WHERE " + IdName + " = @Id");

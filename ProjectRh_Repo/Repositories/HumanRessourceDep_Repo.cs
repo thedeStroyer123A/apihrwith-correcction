@@ -30,7 +30,7 @@ namespace ProjectRh_Repo.Repositories
             cmd.AddParameter("RH_manager_Id", entity.RH_manager_Id);
             cmd.AddParameter("Location_Id", entity.Location_Id);
             cmd.AddParameter("email",entity.email);
-            cmd.AddParameter("IsAdmin", entity.email);
+            
             return ConnectionString.ExecuteNonQuery(cmd);
 
         }
@@ -43,7 +43,7 @@ namespace ProjectRh_Repo.Repositories
             cmd.AddParameter("RH_manager_Id", data.RH_manager_Id);
             cmd.AddParameter("Location_Id", data.Location_Id);
             cmd.AddParameter("email", data.email);
-            cmd.AddParameter("IsAdmin", data.IsAdmin);
+           
             return ConnectionString.ExecuteNonQuery(cmd) == 1;
         }
 
@@ -55,8 +55,8 @@ namespace ProjectRh_Repo.Repositories
                 HRDepartmentName = dtr["HRDepartmentName"].ToString(),
                 RH_manager_Id = (int)dtr["RH_manager"],
                 Location_Id = (int)dtr["Location_Id"],
-                email = dtr["email"].ToString(),
-                IsAdmin = (bool)dtr["IsAdmin"]
+                email = dtr["email"].ToString()
+                
 
             };
         }

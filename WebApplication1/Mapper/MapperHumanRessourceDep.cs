@@ -14,7 +14,7 @@ namespace WebApplication1.Mapper
                 RH_manager_Id = HR_BLL.RH_manager_Id,
                 Location_Id = HR_BLL.Location_Id,
                 email = HR_BLL.email,
-                IsAdmin = HR_BLL != null,
+               
             };
 
         }
@@ -27,7 +27,7 @@ namespace WebApplication1.Mapper
                 RH_manager_Id= humanRessourceDep_C.RH_manager_Id,
                 Location_Id= humanRessourceDep_C.Location_Id,
                 email= humanRessourceDep_C.email,
-                IsAdmin = humanRessourceDep_C.IsAdmin
+                
             };
 
         }

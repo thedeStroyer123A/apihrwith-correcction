@@ -1,6 +1,7 @@
 ﻿using ProjectRh_BLL.Interfaces;
 using ProjectRh_BLL.Mapper;
 using ProjectRh_BLL.Models;
+using ProjectRh_Repo.Entities;
 using ProjectRh_Repo.Repositories;
 using System;
 using System.Collections.Generic;
@@ -24,7 +25,7 @@ namespace ProjectRh_BLL.Services
 
         public HumanRessourceDep_BLL Get(int id)
         {
-            return _repository.Get(id).H_BLLtoH_Repo();
+            return _repository.Get(id)?.H_BLLtoH_Repo();
         }
 
         public IEnumerable<HumanRessourceDep_BLL> GetAll()

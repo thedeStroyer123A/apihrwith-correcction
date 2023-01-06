@@ -5,7 +5,7 @@
 	Id_HR  INT,
 	Id_Em INT,
 	PRIMARY KEY(Id_num),
-	FOREIGN KEY(Id_HR)  REFERENCES HumanRessourceDep(Id_HR),
+	FOREIGN KEY(Id_HR) REFERENCES HumanRessourceDep(Id_HR),  
 	FOREIGN KEY (Id_Em) REFERENCES Employes(Id_Em)
 
 

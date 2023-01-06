@@ -25,7 +25,7 @@ namespace ProjectRh_BLL.Services
 
         public Training_Section_BLL Get(int id)
         {
-            return _repository.Get(id).T_BLLtoT_Repo();
+            return _repository.Get(id)?.T_BLLtoT_Repo();
         }
 
         public IEnumerable<Training_Section_BLL> GetAll()

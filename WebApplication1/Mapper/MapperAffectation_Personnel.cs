@@ -11,7 +11,7 @@ namespace WebApplication1.Mapper
             {
                 Id = AP_BLL.Id,
                 Date_Affectation_Personnel = AP_BLL.Date_Affectation_Personnel,
-                Id_RH = AP_BLL.Id_RH,
+                Id_HR = AP_BLL.Id_HR,
                 Id_Em = AP_BLL.Id_Em,
 
             };
@@ -23,7 +23,7 @@ namespace WebApplication1.Mapper
             {
                 Id = affectation_Personnel_C.Id,
                 Date_Affectation_Personnel = affectation_Personnel_C.Date_Affectation_Personnel,
-                Id_RH = affectation_Personnel_C.Id_RH,
+                Id_HR = affectation_Personnel_C.Id_HR,
                 Id_Em = affectation_Personnel_C.Id_Em
             };
         }

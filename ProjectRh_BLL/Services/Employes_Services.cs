@@ -10,34 +10,34 @@ using System.Threading.Tasks;
 
 namespace ProjectRh_BLL.Services
 {
-    public class Employés_Services : IEmployésService
+    public class Employes_Services : IEmployesService
     {
-        private readonly Employés_Repo _repository;
-        public Employés_Services()
+        private readonly Employes_Repo _repository;
+        public Employes_Services()
         {
-            _repository = new Employés_Repo();
+            _repository = new Employes_Repo();
         }
-        public bool Delete(Employés_BLL entity)
+        public bool Delete(Employes_BLL entity)
         {
             return _repository.Delete(entity.E_RepotoE_BLL());
         }
 
-        public Employés_BLL Get(int id)
+        public Employes_BLL Get(int id)
         {
             return _repository.Get(id).E_BLLtoE_Repo();
         }
 
-        public IEnumerable<Employés_BLL> GetAll()
+        public IEnumerable<Employes_BLL> GetAll()
         {
             return _repository.GetAll().Select(x => x.E_BLLtoE_Repo());
         }
 
-        public int Insert(Employés_BLL entity)
+        public int Insert(Employes_BLL entity)
         {
             return _repository.Insert(entity.E_RepotoE_BLL());
         }
 
-        public bool Update(Employés_BLL data)
+        public bool Update(Employes_BLL data)
         {
             return _repository.Update(data.E_RepotoE_BLL());
         }

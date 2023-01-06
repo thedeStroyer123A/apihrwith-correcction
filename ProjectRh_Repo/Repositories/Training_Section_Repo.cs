@@ -18,14 +18,14 @@ namespace ProjectRh_Repo.Repositories
 
         public override bool Delete(Training_Section id)
         {
-            Command cmd = new Command("P_Training_Section_Delete", true);
+            Command cmd = new Command("P_Training_Section_DELETE", true);
             cmd.AddParameter("Id_Trained_Employee", id.Id);
             return ConnectionString.ExecuteNonQuery(cmd) == 1;
         }
 
         public override int Insert(Training_Section entity)
         {
-            Command cmd = new Command("P_Training_Section_Insert", true);
+            Command cmd = new Command("P_Training_Section_INSERT", true);
             cmd.AddParameter("@First_Name",entity.First_Name);
             cmd.AddParameter("@Last_Name",entity.Last_Name);
             cmd.AddParameter("@Score", entity.Score);
@@ -34,7 +34,7 @@ namespace ProjectRh_Repo.Repositories
 
         public override bool Update(Training_Section data)
         {
-            Command cmd = new Command("P_Training_Section_Update", true);
+            Command cmd = new Command("P_Training_Section_UPDATE", true);
             cmd.AddParameter("Id_Trained_Employee", data.Id);
             cmd.AddParameter("First_Name", data.First_Name);
             cmd.AddParameter("Last_Name",data.Last_Name);

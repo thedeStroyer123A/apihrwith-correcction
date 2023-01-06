@@ -18,14 +18,14 @@ namespace ProjectRh_Repo.Repositories
 
         public override bool Delete(HumanRessourceDep id)
         {
-            Command cmd = new Command("P_HumanRessourceDep_Delete", true);
+            Command cmd = new Command("P_HumanRessourceDep_DELETE", true);
             cmd.AddParameter("@Id_HR", id.Id);
             return ConnectionString.ExecuteNonQuery(cmd) == 1;
         }
 
         public override int Insert(HumanRessourceDep entity)
         {
-            Command cmd = new Command("P_HumanRessourceDep_Insert", true);
+            Command cmd = new Command("P_HumanRessourceDep_INSERT", true);
             cmd.AddParameter("@HRDepartmentName", entity.HRDepartmentName);
             cmd.AddParameter("RH_manager_Id", entity.RH_manager_Id);
             cmd.AddParameter("Location_Id", entity.Location_Id);
@@ -37,7 +37,7 @@ namespace ProjectRh_Repo.Repositories
 
         public override bool Update(HumanRessourceDep data)
         {
-            Command cmd = new Command("P_Employées_Update", true);
+            Command cmd = new Command("P_HumanRessourceDep_UPDATE", true);
             cmd.AddParameter("@Id_HR", data.Id);
             cmd.AddParameter("@HRDepartmentName", data.HRDepartmentName);
             cmd.AddParameter("RH_manager_Id", data.RH_manager_Id);

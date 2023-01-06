@@ -16,7 +16,7 @@ namespace ProjectRh_BLL.Mapper
             {
                 Id = AP_repo.Id,
                 Date_Affectation_Personnel = AP_repo.Date_Affectation_Personnel,
-                Id_RH = AP_repo.Id_RH,
+                Id_HR = AP_repo.Id_HR,
                 Id_Em = AP_repo.Id_Em
             };
         }
@@ -27,7 +27,7 @@ namespace ProjectRh_BLL.Mapper
             {
                 Id = ap.Id,
                 Date_Affectation_Personnel = ap.Date_Affectation_Personnel,
-                Id_RH = ap.Id_RH,
+                Id_HR = ap.Id_HR,
                 Id_Em = ap.Id_Em
 
             };

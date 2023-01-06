@@ -1,4 +1,4 @@
-﻿CREATE PROCEDURE [dbo].[P_Employées_UPDATE]
+﻿CREATE PROCEDURE [dbo].[P_Employes_UPDATE]
 	@Id_Em INT,
 	@FirstName varchar(50),
 	@LastName varchar(50),
@@ -9,7 +9,7 @@
 
 AS
 BEGIN
-	UPDATE Employés
+	UPDATE Employes
 	SET [FirstName] = @FirstName,LastName = @LastName,DateDeNaissance = @DateDeNaissance ,Fonction = @Fonction ,NumeroTel = @NumeroTel ,email = @email 
 	WHERE Id_Em = @Id_Em
 END

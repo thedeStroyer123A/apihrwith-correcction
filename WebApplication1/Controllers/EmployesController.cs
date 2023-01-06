@@ -9,13 +9,13 @@ namespace WebApplication1.Controllers
 {
     [ApiController]
     [Route("api/[Controller]")]
-    public class EmployésController :ControllerBase
+    public class EmployesController :ControllerBase
     {
-        private readonly IEmployésService _employés_service;
+        private readonly IEmployesService _employés_service;
 
-        public EmployésController(IEmployésService employés_service)
+        public EmployesController(IEmployesService employes_service)
         {
-            _employés_service = employés_service;
+            _employés_service = employes_service;
         }
 
         [HttpGet("{id}")]
@@ -31,15 +31,15 @@ namespace WebApplication1.Controllers
         }
 
         [HttpPost]
-        public IActionResult Insert(Employés_C employés)
+        public IActionResult Insert(Employes_C employe)
         {
-            return Ok(_employés_service.Insert(employés.ClientToEmployésBL()));
+            return Ok(_employés_service.Insert(employe.ClientToEmployésBL()));
         }
 
         [HttpPut]
-        public IActionResult Update(Employés_C employés)
+        public IActionResult Update(Employes_C employe)
         {
-            return Ok(_employés_service.Update(employés.ClientToEmployésBL()));
+            return Ok(_employés_service.Update(employe.ClientToEmployésBL()));
         }
 
 

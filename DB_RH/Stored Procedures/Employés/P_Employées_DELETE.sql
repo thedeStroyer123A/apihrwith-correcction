@@ -1,7 +1,0 @@
-﻿CREATE PROCEDURE [dbo].[P_Employees_DELETE]
-	@Id_Em INT
-AS
-BEGIN
-	DELETE FROM Employés
-	WHERE Id_Em = @Id_Em
-END

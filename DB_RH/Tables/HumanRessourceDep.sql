@@ -1,6 +1,6 @@
-﻿CREATE TABLE [dbo].[HumanRessourseDep]
+﻿CREATE TABLE [dbo].[HumanRessourceDep]
 (
-	Id_HR UNIQUEIDENTIFIER	NOT NULL DEFAULT NEWSEQUENTIALID(),
+	Id_HR INT IDENTITY,
 	HRDepartmentName VARCHAR(50) NOT NULL,
 	RH_manager_Id INT,
 	Location_Id  INT,

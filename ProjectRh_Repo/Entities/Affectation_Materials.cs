@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ProjectRh_Repo.Entities
 {
-    public class Affectation_Material : IEntity<int>
+    public class Affectation_Materials : IEntity<int>
     {
         public int Id { get; set; }
        

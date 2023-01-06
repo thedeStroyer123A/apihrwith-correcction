@@ -25,7 +25,7 @@ namespace ProjectRh_Repo.Repositories
 
         public override int Insert(ControlCheck entity)
         {
-            Command cmd = new Command("P_Employées_INSERT", true);
+            Command cmd = new Command("P_ControlCheck_INSERT", true);
             cmd.AddParameter("@EndDateTraining", entity.EndDateTraining);
             cmd.AddParameter("@BeginingDateTrining", entity.BeginingDateTraining);
             cmd.AddParameter("@Passed", entity.Passed);
@@ -37,7 +37,7 @@ namespace ProjectRh_Repo.Repositories
 
         public override bool Update(ControlCheck data)
         {
-            Command cmd = new Command("P_ControlCheck_Update", true);
+            Command cmd = new Command("P_ControlCheck_UPDATE", true);
             cmd.AddParameter("Id", data.Id);
             cmd.AddParameter("@EndDateTraining", data.EndDateTraining);
             cmd.AddParameter("@BeginingDateTrining", data.BeginingDateTraining);

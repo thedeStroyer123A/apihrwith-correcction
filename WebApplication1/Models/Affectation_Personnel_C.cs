@@ -7,7 +7,7 @@ namespace WebApplication1.Models
         public int Id { get; set; }
         
         public DateTime Date_Affectation_Personnel { get; set; }
-        public int Id_RH { get; set; }
+        public int Id_HR { get; set; }
         public int Id_Em { get; set; }
     }
 }

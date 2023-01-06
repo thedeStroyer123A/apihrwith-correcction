@@ -14,4 +14,18 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="Id_Affectation_Material" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="90cb9a1c-f9fb-449d-834b-c5fa445595c6" ChangeDateTime="01/06/2023 08:24:36">
+    <Property Name="ElementName" Value="[dbo].[ControlCheck].[Id_HR]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[ControlCheck]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Id_RH" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="005ac020-366c-4056-b822-65cc2690ddba" ChangeDateTime="01/06/2023 08:28:20">
+    <Property Name="ElementName" Value="[dbo].[ControlCheck].[Id_RH]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[ControlCheck]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Id_HR" />
+  </Operation>
 </Operations>

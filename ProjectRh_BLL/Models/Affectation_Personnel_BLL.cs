@@ -10,9 +10,9 @@ namespace ProjectRh_BLL.Models
     public class Affectation_Personnel_BLL : IEntity<int>
     {
         public int Id { get; set; }
-        public int Id_num { get; set; }
+        
         public DateTime Date_Affectation_Personnel { get; set; }
-        public int Id_RH { get; set; }
+        public int Id_HR { get; set; }
         public int Id_Em { get; set; }
 
     }

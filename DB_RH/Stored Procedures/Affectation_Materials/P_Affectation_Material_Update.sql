@@ -1,8 +1,8 @@
 ﻿CREATE PROCEDURE [dbo].[P_Affectation_Material_UPDATE]
 		@Id_Affectation_Material INT,
-		@Date_Affectation_Material DATETIME,
+		@Date_Affectation_Material DATE,
 		@Id_Material INT,
-		@Id_HR UNIQUEIDENTIFIER
+		@Id_HR INT
 
 AS
 BEGIN

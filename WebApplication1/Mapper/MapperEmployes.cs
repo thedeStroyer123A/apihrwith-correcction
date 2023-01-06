@@ -3,11 +3,11 @@ using WebApplication1.Models;
 
 namespace WebApplication1.Mapper
 {
-    public static class MapperEmployés 
+    public static class MapperEmployes 
     {
-        public static Employés_C EmployésBLToClient(this Employés_BLL e_BLL)
+        public static Employes_C EmployésBLToClient(this Employes_BLL e_BLL)
         {
-            return new Employés_C()
+            return new Employes_C()
             {
                 Id  = e_BLL.Id,
                 FirstName = e_BLL.FirstName,
@@ -19,9 +19,9 @@ namespace WebApplication1.Mapper
 
             };
         }
-        public static  Employés_BLL ClientToEmployésBL(this Employés_C employés_C)
+        public static  Employes_BLL ClientToEmployésBL(this Employes_C employés_C)
         {
-            return new Employés_BLL()
+            return new Employes_BLL()
             {
                 Id = employés_C.Id,
                 FirstName = employés_C.FirstName,

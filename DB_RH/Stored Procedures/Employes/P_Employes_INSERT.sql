@@ -1,4 +1,4 @@
-﻿CREATE PROCEDURE [dbo].[P_Employées_INSERT]
+﻿CREATE PROCEDURE [dbo].[P_Employes_INSERT]
 	@FirstName varchar(50),
 	@LastName varchar(50),
 	@DateDeNaissance date, 
@@ -7,6 +7,6 @@
 	@email varchar(50)
 AS
 BEGIN
-	INSERT INTO Employés(FirstName,LastName,DateDeNaissance,Fonction,NumeroTel,email)
+	INSERT INTO Employes(FirstName,LastName,DateDeNaissance,Fonction,NumeroTel,email)
 	VALUES(@FirstName,@LastName,@DateDeNaissance,@Fonction,@NumeroTel,@email)
 END

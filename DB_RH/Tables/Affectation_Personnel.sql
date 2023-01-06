@@ -1,12 +1,12 @@
 ﻿CREATE TABLE [dbo].[Affectation_Personnel]
 (
 	[Id_num] INT NOT NULL  IDENTITY(1,1),
-	Date_Affectation_Personnel DATETIME,
-	Id_RH  UNIQUEIDENTIFIER,
+	Date_Affectation_Personnel DATE,
+	Id_HR  INT,
 	Id_Em INT,
 	PRIMARY KEY(Id_num),
-	FOREIGN KEY(Id_RH)  REFERENCES HumanRessourseDep(Id_HR),
-	FOREIGN KEY (Id_Em) REFERENCES Employés(Id_Em)
+	FOREIGN KEY(Id_HR)  REFERENCES HumanRessourceDep(Id_HR),
+	FOREIGN KEY (Id_Em) REFERENCES Employes(Id_Em)
 
 
 )

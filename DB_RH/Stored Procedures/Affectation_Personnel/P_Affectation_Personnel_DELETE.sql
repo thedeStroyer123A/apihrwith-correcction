@@ -1,4 +1,4 @@
-﻿CREATE PROCEDURE [dbo].[Affectation_Personnel_DELETE]
+﻿CREATE PROCEDURE [dbo].[P_Affectation_Personnel_DELETE]
 	@Id_num INT
 AS
 BEGIN

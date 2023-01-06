@@ -11,7 +11,7 @@ Modèle de script de post-déploiement
 */
 
 
-INSERT INTO [Employés] (FirstName , LastName , DateDeNaissance , Fonction , NumeroTel , email) VALUES
+INSERT INTO [Employes] (FirstName , LastName , DateDeNaissance , Fonction , NumeroTel , email) VALUES
 ('Nadine','Mirana','1993-04-05','Responsable qualité','045624256','Nadine12451@gmail.com'),
 ('Nassima','pakoki','1991-01-05','Responsable Des achats','04562425','Nassima12451@gmail.com'),
 ('Jean','nichola','1985-03-05','Directeur technique','045624258','Jean.nochla12451@gmail.com'),

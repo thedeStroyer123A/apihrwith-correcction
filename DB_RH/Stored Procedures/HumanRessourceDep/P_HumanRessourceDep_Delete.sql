@@ -1,7 +1,7 @@
-﻿CREATE PROCEDURE [dbo].[P_HumanRessourceDep_Delete]
-	@Id_HR uniqueidentifier
+﻿CREATE PROCEDURE [dbo].[P_HumanRessourceDep_DELETE]
+	@Id_HR INT
 AS
 BEGIN
-	DELETE HumanRessourseDep
+	DELETE HumanRessourceDep
 	WHERE Id_HR = @Id_HR;
 END

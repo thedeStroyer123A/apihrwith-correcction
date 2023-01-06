@@ -10,7 +10,7 @@ namespace ProjectRh_BLL.Mapper
 {
     public static class MapperAffectation_MaterialBLL
     {
-        public static Affectation_Material_BLL AM_BLLtoAP_Repo( this Affectation_Material AM_repo)
+        public static Affectation_Material_BLL AM_BLLtoAP_Repo( this Affectation_Materials AM_repo)
         {
             return new Affectation_Material_BLL
             {
@@ -21,9 +21,9 @@ namespace ProjectRh_BLL.Mapper
 
             };
         }
-        public static Affectation_Material AP_RepotoAM_BLL(this Affectation_Material_BLL am )
+        public static Affectation_Materials AP_RepotoAM_BLL(this Affectation_Material_BLL am )
         {
-            return new Affectation_Material
+            return new Affectation_Materials
             {
                 Id = am.Id,
                 Date_affectation_Material = am.Date_affectation_Material,

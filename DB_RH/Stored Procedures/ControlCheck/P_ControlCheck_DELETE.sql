@@ -4,4 +4,5 @@ AS
 BEGIN
 	DELETE ControlCheck
 	WHERE Id = @Id
-END
+END 
+

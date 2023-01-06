@@ -1,4 +1,4 @@
-﻿CREATE PROCEDURE [dbo].[P_Training_Section_Insert]
+﻿CREATE PROCEDURE [dbo].[P_Training_Section_INSERT]
 	@First_Name  VARCHAR(50),
 	@Last_Name VARCHAR(50),
 	@Score INT

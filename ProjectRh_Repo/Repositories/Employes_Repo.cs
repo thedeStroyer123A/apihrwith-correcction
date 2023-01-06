@@ -9,22 +9,22 @@ using System.Threading.Tasks;
 
 namespace ProjectRh_Repo.Repositories
 {
-    public class Employés_Repo : Basic_Repository.BasicRepo<int, Employés>
+    public class Employes_Repo : Basic_Repository.BasicRepo<int, Employes>
     {
-        public Employés_Repo() :base("Employés", "Id_Em")
+        public Employes_Repo() :base("Employes", "Id_Em")
         {
 
         }
-        public override bool Delete(Employés id)
+        public override bool Delete(Employes id)
         {
-            Command cmd = new Command("P_Employées_DELETE", true);
+            Command cmd = new Command("P_Employes_DELETE", true);
             cmd.AddParameter("@Id_Em", id.Id);
             return ConnectionString.ExecuteNonQuery(cmd) == 1;
         }
 
-        public override int Insert(Employés entity)
+        public override int Insert(Employes entity)
         {
-            Command cmd = new Command("P_Employées_INSERT", true);
+            Command cmd = new Command("P_Employes_INSERT", true);
             cmd.AddParameter("@FirstName", entity.FirstName);
             cmd.AddParameter("@LastName", entity.LastName);
             cmd.AddParameter("@DateDeNaissance",entity.DateDeNaissance);
@@ -34,9 +34,9 @@ namespace ProjectRh_Repo.Repositories
             return ConnectionString.ExecuteNonQuery(cmd);
         }
 
-        public override bool Update(Employés data)
+        public override bool Update(Employes data)
         {
-            Command cmd = new Command("P_Employées_Update", true);
+            Command cmd = new Command("P_Employes_UPDATE", true);
             cmd.AddParameter("Id_Em",data.Id);
             cmd.AddParameter("FirstName", data.FirstName);
             cmd.AddParameter("LastName", data.LastName);
@@ -47,9 +47,9 @@ namespace ProjectRh_Repo.Repositories
             return ConnectionString.ExecuteNonQuery(cmd)==1;
         }
 
-        protected override Employés Convert(IDataRecord dtr)
+        protected override Employes Convert(IDataRecord dtr)
         {
-            return new Employés
+            return new Employes
             {
                 Id =(int)dtr["Id_Em"],
                 FirstName = dtr["FirstName"].ToString(),

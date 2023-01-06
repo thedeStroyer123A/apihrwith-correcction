@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ProjectRh_Repo.Entities
 {
-    public class Employés : IEntity<int>
+    public class Employes : IEntity<int>
     {
         
         public int Id { get; set; }

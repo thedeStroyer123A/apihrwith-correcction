@@ -11,7 +11,7 @@ namespace ProjectRh_Repo.Repositories
 {
     public class Material_Repo : Basic_Repository.BasicRepo<int ,Material>
     {
-        public Material_Repo() : base("Material", "Id_Material")
+        public Material_Repo() : base("Materials", "Id_Material")
         {
 
         }
@@ -25,7 +25,7 @@ namespace ProjectRh_Repo.Repositories
 
         public override int Insert(Material entity)
         {
-            Command cmd = new Command("P_Matérial_Insert", true);
+            Command cmd = new Command("P_Material_INSERT", true);
             cmd.AddParameter("@Brand", entity.Brand);
             cmd.AddParameter("@Type", entity.Type);
             cmd.AddParameter("@RegistrationNumber", entity.RegistrationNumber);
@@ -38,7 +38,7 @@ namespace ProjectRh_Repo.Repositories
 
         public override bool Update(Material data)
         {
-            Command cmd = new Command("P_Update_Update", true);
+            Command cmd = new Command("P_Material_UPDATE", true);
             cmd.AddParameter("Id_Material", data.Id);
             cmd.AddParameter("Brand", data.Brand);
             cmd.AddParameter("Type", data.Type);

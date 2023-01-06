@@ -1,10 +1,10 @@
-﻿CREATE PROCEDURE [dbo].[P_ControlCheck_Update]
+﻿CREATE PROCEDURE [dbo].[P_ControlCheck_UPDATE]
 	@Id INT,
 	@EndDateTraining DATE ,
 	@BeginingDateTraining DATE ,
 	@Passed BIT,
 	@Failed BIT,
-	@Id_HR  UNIQUEIDENTIFIER,
+	@Id_HR  INT,
 	@Id_Trained_Employee INT
 AS
 BEGIN

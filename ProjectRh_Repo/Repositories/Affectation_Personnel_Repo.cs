@@ -11,7 +11,7 @@ namespace ProjectRh_Repo.Repositories
 {
     public class Affectation_Personnel_Repo : Basic_Repository.BasicRepo<int, Affectation_Personnel>
     {
-        public Affectation_Personnel_Repo() : base("Affectation_Personnel", "id_num")
+        public Affectation_Personnel_Repo() : base("Affectation_Personnel", "Id_num")
         {
 
         }
@@ -25,9 +25,9 @@ namespace ProjectRh_Repo.Repositories
 
         public override int Insert(Affectation_Personnel entity)
         {
-            Command cmd = new Command("P_Affectation_Personnel_Insert",true);
+            Command cmd = new Command("P_Affectation_Personnel_INSERT",true);
             cmd.AddParameter("Date_Affectation_Personnel", entity.Date_Affectation_Personnel);
-            cmd.AddParameter("Id_RH", entity.Id_RH);
+            cmd.AddParameter("Id_HR", entity.Id_HR);
             cmd.AddParameter("Id_Em", entity.Id_Em);
             return base.ConnectionString.ExecuteNonQuery(cmd);
 
@@ -36,10 +36,10 @@ namespace ProjectRh_Repo.Repositories
 
         public override bool Update(Affectation_Personnel data)
         {
-            Command cmd = new Command("P_Affectation_Personnel_Update",true);
+            Command cmd = new Command("P_Affectation_Personnel_UPDATE",true);
             cmd.AddParameter("Id_num", data.Id);
             cmd.AddParameter("Date_Affectation_Personnel", data.Date_Affectation_Personnel);
-            cmd.AddParameter("Id_RH", data.Id_RH);
+            cmd.AddParameter("Id_RH", data.Id_HR);
             cmd.AddParameter("Id_Em", data.Id_Em);
             return base.ConnectionString.ExecuteNonQuery (cmd) == 1;
         }
@@ -50,7 +50,7 @@ namespace ProjectRh_Repo.Repositories
             {
                 Id = (int)dtr["Id_num"],
                 Date_Affectation_Personnel = (DateTime)dtr["Date_Affectation_Personnel"],
-                Id_RH = (int)dtr["Id_RH"],
+                Id_HR = (int)dtr["Id_HR"],
                 Id_Em = (int)dtr["Id_Em"]
 
 

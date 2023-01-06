@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace ProjectRh_BLL.Interfaces
 {
-    public interface IEmployésService :IGlobalInterfaces<int,Employés_BLL>
+    public interface IEmployesService :IGlobalInterfaces<int,Employes_BLL>
     {
 
     }

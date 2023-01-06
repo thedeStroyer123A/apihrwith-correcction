@@ -60,7 +60,7 @@
     <Folder Include="Stored Procedures" />
     <Folder Include="Views" />
     <Folder Include="Tables" />
-    <Folder Include="Stored Procedures\Employés" />
+    <Folder Include="Stored Procedures\Employes" />
     <Folder Include="Stored Procedures\HumanRessourceDep" />
     <Folder Include="Stored Procedures\Materials" />
     <Folder Include="Fonctions" />
@@ -73,15 +73,15 @@
     <PostDeploy Include="Scripts\Script.PostDeployment1.sql" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="Tables\Employés.sql" />
-    <Build Include="Tables\HumanRessourseDep.sql" />
+    <Build Include="Tables\Employes.sql" />
+    <Build Include="Tables\HumanRessourceDep.sql" />
     <Build Include="Tables\Materials.sql" />
-    <Build Include="Views\V_Employés.sql" />
+    <Build Include="Views\V_Employes.sql" />
     <Build Include="Views\V_HumanRessourceDep.sql" />
     <Build Include="Views\V_Material.sql" />
-    <Build Include="Stored Procedures\Employés\P_Employées_DELETE.sql" />
-    <Build Include="Stored Procedures\Employés\P_Employées_INSERT.sql" />
-    <Build Include="Stored Procedures\Employés\P_Employées_UPDATE.sql" />
+    <Build Include="Stored Procedures\Employes\P_Employes_DELETE.sql" />
+    <Build Include="Stored Procedures\Employes\P_Employes_INSERT.sql" />
+    <Build Include="Stored Procedures\Employes\P_Employes_UPDATE.sql" />
     <Build Include="Stored Procedures\HumanRessourceDep\P_HumanRessourceDep_Delete.sql" />
     <Build Include="Stored Procedures\HumanRessourceDep\P_HumanRessourceDep_INSERT.sql" />
     <Build Include="Stored Procedures\HumanRessourceDep\P_HumanRessourceDep_UPDATE.sql" />
@@ -90,13 +90,13 @@
     <Build Include="Stored Procedures\Materials\P_Material_UPDATE.sql" />
     <Build Include="Fonctions\GetSecretKey.sql" />
     <Build Include="Tables\Training_Section.sql" />
-    <Build Include="Stored Procedures\Training_Section\P_Training_Section_Delete.sql" />
-    <Build Include="Stored Procedures\Training_Section\P_Training_Section_Insert.sql" />
-    <Build Include="Stored Procedures\Training_Section\P_Training_Section_Update.sql" />
+    <Build Include="Stored Procedures\Training_Section\P_Training_Section_DELETE.sql" />
+    <Build Include="Stored Procedures\Training_Section\P_Training_Section_INSERT.sql" />
+    <Build Include="Stored Procedures\Training_Section\P_Training_Section_UPDATE.sql" />
     <Build Include="Views\V_Training_Section.sql" />
     <Build Include="Tables\Affectation_Materials.sql" />
     <Build Include="Stored Procedures\Affectation_Materials\P_Affectation_Material_DELETE.sql" />
-    <Build Include="Stored Procedures\Affectation_Materials\P_Affectation_Material_Update.sql" />
+    <Build Include="Stored Procedures\Affectation_Materials\P_Affectation_Material_UPDATE.sql" />
     <Build Include="Views\V_Affectation_Material.sql" />
     <Build Include="Stored Procedures\Affectation_Materials\P_Affectation_Material_INSERT.sql" />
     <Build Include="Tables\Affectation_Personnel.sql" />
@@ -106,9 +106,9 @@
     <Build Include="Views\V_Affectation_Personnel.sql" />
     <Build Include="Tables\ControlCheck.sql" />
     <Build Include="Views\V_Check_Control.sql" />
-    <Build Include="Stored Procedures\ControlCheck\P_ControlCheck_Delete.sql" />
-    <Build Include="Stored Procedures\ControlCheck\P_ControlCheck_Insert.sql" />
-    <Build Include="Stored Procedures\ControlCheck\P_ControlCheck_Update.sql" />
+    <Build Include="Stored Procedures\ControlCheck\P_ControlCheck_DELETE.sql" />
+    <Build Include="Stored Procedures\ControlCheck\P_ControlCheck_INSERT.sql" />
+    <Build Include="Stored Procedures\ControlCheck\P_ControlCheck_UPDATE.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="DB_RH.refactorlog" />

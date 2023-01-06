@@ -8,11 +8,11 @@ using System.Threading.Tasks;
 
 namespace ProjectRh_BLL.Mapper
 {
-    public static class MapperEmployésBLL
+    public static class MapperEmployesBLL
     {
-        public static Employés_BLL E_BLLtoE_Repo(this Employés em_repo )
+        public static Employes_BLL E_BLLtoE_Repo(this Employes em_repo )
         {
-            return new Employés_BLL
+            return new Employes_BLL
             {
                 Id = em_repo.Id,
                 FirstName = em_repo.FirstName,
@@ -26,9 +26,9 @@ namespace ProjectRh_BLL.Mapper
 
            
         }
-        public static Employés E_RepotoE_BLL(this Employés_BLL Em)
+        public static Employes E_RepotoE_BLL(this Employes_BLL Em)
         {
-            return new Employés
+            return new Employes
             {
                 Id=Em.Id,
                 FirstName=Em.FirstName,

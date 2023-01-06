@@ -1,4 +1,4 @@
-﻿CREATE PROCEDURE [dbo].[P_Training_Section_Update]
+﻿CREATE PROCEDURE [dbo].[P_Training_Section_UPDATE]
 	@Id_Trained_Employee INT,
 	@First_Name VARCHAR(50),
 	@Last_Name VARCHAR(50),
